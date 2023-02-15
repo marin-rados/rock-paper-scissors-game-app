@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="buttons-div">
+      <button class="choices btn" type="button" value="rock">
+        <img src="./assets/rock.png" alt="rock" class="button-images">
+        <p>ROCK</p> 
+      </button>
+      
+      <button class="choices btn" type="button" value="paper">
+        <img src="./assets/paper.png" alt="paper" class="button-images">
+        <p>PAPER</p>
+      </button>
+      
+      <button class="choices btn" type="button" value="scissors">
+        <img src="./assets/scissors.png" alt="scissors" class="button-images">
+        <p>SCISSORS</p>
+      </button>
+    </div>
+
+    <div class="result-div">
+      <div id="result">   
+      </div>
+      <div class="final-result-images">
+        <img class="result-img hidden" id="robot" src="./assets/robot.png" alt="computer won">
+        <img class="result-img hidden" id="user" src="./assets/win.png" alt="user won">
+      </div>
+  </div>
+
+    <div class="btn" id="reset">
+      <img src="./assets/reset.png" alt="scissors" class="button-images">
+    </div>
+
+  </div>
+</body>
+</html>
