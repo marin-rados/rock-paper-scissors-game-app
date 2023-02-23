@@ -1,9 +1,9 @@
-let playerScore = 0
-let computerScore = 0
-const buttons = document.querySelectorAll('button')
-const resetBtn = document.querySelector('#reset')
-let user = document.querySelector('#user')
-let robot = document.querySelector('#robot')
+let playerScore = 0;
+let computerScore = 0;
+const buttons = document.querySelectorAll('button');
+const resetBtn = document.querySelector('#reset');
+let user = document.querySelector('#user');
+let robot = document.querySelector('#robot');
 
 function computerPlay() {
     let choices = ['rock', 'paper', 'scissors']
@@ -18,7 +18,7 @@ function disableButtons() {
 
 function playRound(playerSelection) {
     let computerSelection = computerPlay()
-    let result = ""
+    let result = "";
 
     if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
         (playerSelection == 'scissors' && computerSelection == 'paper') ||
